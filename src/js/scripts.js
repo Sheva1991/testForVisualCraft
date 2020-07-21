@@ -58,7 +58,9 @@ search.addEventListener('blur', () => {
     if (search.value == '') {
         formSearch.classList.remove('active')
         search.classList.remove('active')
-        togglerSearch.style.display = 'flex'
+        setTimeout(() => {
+            togglerSearch.style.display = 'flex'
+        }, 500)
     }
 })
 

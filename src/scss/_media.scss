@@ -250,15 +250,43 @@
             }
         }
     }
-}
-
-@media screen and (max-width: 420px) {
 
     .header {
         .container {
             height: 60px;
         }
     }
+
+    .togglerSearch {
+        margin-right: 0;
+    }
+
+    .formSearch {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &.active {
+            transform: translate(0, 200%);
+            z-index: 1000;
+            width: 150px;
+        }
+
+        &__input {
+            &.active {
+                width: 150px;
+            }
+        }
+    }
+
+    .menu {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+
 
     .navigation {
         right: 10px;
@@ -277,10 +305,6 @@
                 }
             }
         }
-    }
-
-    .menu {
-        margin: 0 10px;
     }
 
     .logo {
