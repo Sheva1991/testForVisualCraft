@@ -72,6 +72,14 @@
     border: none;
 }
 
+@media screen and (max-width: 1024px) {
+    .slider {
+        background-image: url(../img/header1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
 
 @media screen and (max-width: 576px) {
 
