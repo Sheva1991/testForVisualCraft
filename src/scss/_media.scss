@@ -204,16 +204,17 @@
         &__gray {
             flex-basis: 100%;
             padding: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         &__content {
-            position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -10%);
+            position: static;
+            transform: translate(0, 0);
         }
 
         &__title {
+            margin-top: 0;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -388,10 +389,6 @@
     .apply {
         &__title {
             font-size: 3rem;
-        }
-
-        &__content {
-            transform: translate(-50%, -5%);
         }
     }
 
