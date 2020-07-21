@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    //= partials/head.html
+    <title>Test</title>
+</head>
+
+<body>
+    //= partials/header.html
+
+    <main>
+        <nav class='navigation' id="navigation">
+            <a href="#section1" class="navigation__item" data-number="1">01</a>
+            <a href="#section2" class="navigation__item" data-number="2">02</a>
+            <a href="#section3" class="navigation__item" data-number="3">03</a>
+            <a href="#section4" class="navigation__item" data-number="4">04</a>
+            <a href="#section5" class="navigation__item" data-number="5">05</a>
+            <a href="#section6" class="navigation__item" data-number="6">06</a>
+            <a href="#section7" class="navigation__item" data-number="7">07</a>
+        </nav>
+        <section class="slider cd-section cd-dark" id="section1">
+            <div class="slider__slide">
+                <div class="container content">
+                    <h1 class="content__title">Launching Soon</h1>
+                    <a class="btn" href="#" target="_blank">register interest</a>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <div class="container content">
+                    <h2 class="content__title">Some Text 2</h2>
+                    <a class="btn" href="#" target="_blank">buy first</a>
+                </div>
+            </div>
+            <div class="slider__slide">
+                <div class="container content">
+                    <h2 class="content__title">Some text 3</h2>
+                    <a class="btn" href="#" target="_blank">learn more</a>
+                </div>
+            </div>
+        </section>
+        <section class="section cd-section" id="section2">
+            <div class="container">
+                <h2 class="section__title" hidden>Why use test</h2>
+                <div class="test">
+                    <div class="test__img">
+                        <img src="./img/flower1.png" alt="flower">
+                        <h2 class="test__title">Why use <br /> test</h2>
+                    </div>
+                    <div class="test__content">
+                        <div class="test__item">
+                            <h4>Tableware</h4>
+                            <p>Browse exciting products from a selection of quality makers, all in one place</p>
+                        </div>
+                        <div class="test__item">
+                            <h4>Products Just For You</h4>
+                            <p>Our technology will do all the hard work & recommend products that fit well with your
+                                customer profile, based on what your competition is doing.</p>
+                        </div>
+                        <div class="test__item">
+                            <h4>Test It In Your Store</h4>
+                            <p>Our test & return feature will make it easy for you to find that bestseller, delight your
+                                customers & keep them coming back for more </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--gray pb-50 cd-section" id="section3">
+            <div class="container">
+                <h2 class="section__title">Buying for your store<br>
+                    <span></span> has never been easier</h2>
+                <div class="buyForStore">
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="28" height="40" viewBox="0 0 28 40">
+                                <image width="28" height="40"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAoCAYAAADt5povAAAEO0lEQVRYhbWYa4hVVRTHf3OzpyWN2YvopWT0mNhtsjdRlBgViBWUeyohArPSCUkIog8SUtDUOGahUUEauxAs8MMQNFJEMmWy21QGRRIxPajMHhOSVhZr+t+4Tfeec+5Mri/7cs5a63/W3mv919q3g4oSU74SmAtcCJwIHAr8AOwA3gJWB+92lnkrBYwpHw30AjcBB+vxHuBnoBOYpGefAw8G79YX+auVgHUBrwK3AX8A5mxB8O6Q4N0xwLFAjyI8GXg2prx4XBHGlKcBA8As4APgjuDd1gL9R4BlwK/A/ODdpnYjfLgBbE4RmEnw7n7gaeAw4L5Wek0BY8pn68zsaxcG774uAmuQB4DPgEtjyt2VAXVmRwCbgndDFcEsyl1mo6O6uB1Ap/X1qmANsk0/z2gH8Hitb44D8DWtne0AWlHbFn3ULlrw7hvgK53/f2RSsfm45Vzg+wkDxpRnAhcooSwxfgGGgnefjIny21Y+SgFjytcA8yzVgdOAA8ao7Ispf2rAwIbg3UCRv6ZMIwczgM3A5QL5UzVmnLlLqlOB6cBJ8mX0N2jcG7wbbAdwhxyZfAm8ArwcvGtaJjHlK4DrtRMnACPAY8G75aWAMeU1xi7AXuB5Y4/g3XdF29Rga51lhRE8cJBRXfBuYUvAmPIqYLH63JLg3QtVgJoA3wKsUi1an/yng3Q0KNnDlepz1hk2jgeswd8NwDPAFGBp8K6feuEr3ZfpA1ZMFIy/S2Ojttd8Lo0pn04D0/RobBgI3vVOFKwBtFc91bJ4yShgTHmqMmyPtvT/lpXyfaNh1dSKjrMxoVXtTDDKQY0gNpIsMMDz9e6N/RBdXeq+Z9VEV+gr9pfUfc/siCl/YakbvJtSBhZTtrp6CLgamAx8CPSV8adsrdxGajLcXTEyq6u7gVNVX1cZG8WUz6tgaxiTayLcUokpzxFXDgPXAtcBRoM2Tt5b8YN/r4loO2PKZVP4OSriLcDbIvLNejejyFC+O+tbOiyibTrWNUi9gxtB+JjyKSonxL1F0i2MYQPcLkVfZBG8e066l1jrUSfpswYMlJF83ff2mrbIZHaJESKJbRojLxPRLw/exRK7uu8to+cWU7Zx3qbte4J3T5ahxpS36hpwZ/BubYmuZfVqK6HgXVedvNdpXRRTPqpCpHu1/lQCZr4WNWKMAgbvHtUQdBbQXwFwt87u4xK9fvkcEsa/BmFrH3aD7Y4p95U4sq+eF7x7ryC6PmXnznprosmIMR9Yq7lznTp104G2AMi28XEl2IhuXy82BZRB0FZM091wTfDuqYpgd1kiAV2KrGdsBrcaE226fkKZaPK+LikJeCl4t096diQ3q85mi41M3rVhLHj3zljfhXQWU7YL5q3A6Dwi+Q34Ub+PBA5seGdJtD54Z7NMU6n0t0lM+XbgIuBMUdvhemV3C6NGu2VZJhobtRbgL/KiUal/RdjCAAAAAElFTkSuQmCC" />
+                            </svg>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Free For Retailers</h4>
+                            <p class="category__text">Sparkinity is completely free for retailers. No markups or fees
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="37" height="33" viewBox="0 0 37 33">
+                                <image data-name="Векторный смарт-объект" width="37" height="33"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAhCAYAAABeD2IVAAACnUlEQVRYhe2XPWhUQRSFv2gUC8VCwfiDGgVjoTiOoCmUiIJJFG20cSpNa2EaCSYg2CirjQiCKUQRHQloJSISFNQgWjg7EKuN4g/BdIIoKRIhMngXFn1J3pu3ZoN4YLk7c8/cOTvzZt7ZOuv8BLMM9SLnHTAwC6TtBNaXRQ0YrY7VWBDW+RtB1JxaC0nCvy3KOr+uWrWqIso6vxx4ITE3qrVSZ4FlEmsvyjq/CeiQZoe0aysKKABzgS6JhbwF61Nw/oB1fhGwFdgL7AfuGa0uWOe3A4et82EbHwNFo9W3vybKOn8AMMA2YANQJ6lx4LR8D/EQcEY+E9b5EvA6lDBaPUgzV5btKwI7gCbgE9AD7AMajFZDgSCxQfp7hNck44ppJ0q9Ukarz9b5NuAZsBIYNFr1J/C+AP3W+QXCGwHawvi0c2V60I1Wb4FW4DvQZ51vSeJJf5/wWmVcamQ+fUarQaAdmD/FSStIvl34mRB7JTgZOzxJfljyLqZ41JUArJXT9946vxA4ARwF7gBXQr/kA680U6IaJQZT9gFYEo4/sAU4BQxV8DKLit2+siNoBkaBk8BSiaPSX8nLhDwrFSz0ReC60WpM+i9b568Cx2XFGqepk4hYUTeBbqPVj98TIrDXOn8N2DhjooxWb1JwguBpeUn479HTorx9Ddb53RnHlqZ6n1nnV4ibyILwMifPP+TgAJqNViMJgoJXfwmsjikcRHVGjFsDdIodaak0cmIAn4oJvAR8zCwqQlB58nNi6h4BB41W49b5ecB9cRLnjVbdMbXzPOjBxN0SAeFeCj+wV9q3JR+F6JXi12oFe/IQ2AO8Eof5RCzLWIoSicglSoQtBp4Dm4MbBXYZrb7mqZlblAhbBdwFjhitJvNY6QD8BMhRxRvAIInwAAAAAElFTkSuQmCC" />
+                            </svg>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Maker Stories & Reviews</h4>
+                            <p class="category__text">In depth profiles on makers, see who you are buying from and how
+                                they rate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="38" height="31" viewBox="0 0 38 31">
+                                <image data-name="Векторный смарт-объект" width="38" height="31"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAfCAYAAACLSL/LAAACE0lEQVRYhe2YzUsVURiHn1uXaBn0J7hwkYvDATdJmUWCGLYTPIJom0KENoL2F/S1qI2mICKSx4UfBOFObNEiKjgcyIWiVlCtgiBIaKEoLx51zHvRGWe6s/CBGe58P/Pe353z3ilQBuv8OWAGuFVunxPyDbhqtPpa6jQlxazzsn4CaAOWgaWUpS4A9cAKUGe0+nlcsefAfeAD0Gi0+p2mVbjxQeAe8BFoMFqtR/c5U+KgviylBKPVFtANDAG1wGyIzh4HKmad7wJGgU/AlSyk/rletHKTQHuQ3q+YdV5CPgIsAjeyluJw5STPz3a3FYLUZWAeWAOulwpjloTKvRRX4IHR6lHBOn8JeAucD9n6r1IRzgKPgSrgjoi9Aa5VSKYcG8XID6ArJ1L9QHVxd8loNVZZnx2s850idug5lhdOxeJSTHqgdb4lPHt6jFbjaYslqph1vhWYDje2krYUScSs8+1hXPsrvZrR6l3FxazzdwH52v4AN41WC1lIESdj1nnpAF6ERRnCmqzzTTGv9wsYMFptpiYG9EY+N4cpCa+BL2mKSbbmgIvAcGhV4rJutDpSKpaY0eq9db4BkFxJ1taMVk8TyB2LWOE3WklnK3I/gCfW+f5ciAlGq8XQJoncQ+t8Ry7E2JFblf8EwFToelMn8ZAUQtyahRSn3UUC8t/2WOdfVVZljxqZidjn8ILjdj68APi+DQiAmnLeckdoAAAAAElFTkSuQmCC" />
+                            </svg>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Easy Returns</h4>
+                            <p class="category__text">Send back any products that don’t sell within 90 days
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="35" height="35" viewBox="0 0 35 35">
+                                <image data-name="Векторный смарт-объект" width="35" height="35"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADVklEQVRYhcWYT0gUcRTHPw4ilbUVBhGhBCFSEQxzSU9dJBA8S0x02E1DIQy8CXkKWoIOIYKgi3sQhlg6CoJ0tk7DQHSQ6KJXBZGMKMl49F1Z13X/zCzbg2WZmd+873fe7833vTdtNGBBGF0CRgAP6AN6gC4gBewBO8AmsAGEQMH33N16EeoiE4TRHWASGAK6dXof2ALOiZSR+AVcAzq1xq6vArO+536phePUINEVhNFbYB14ChwCOeAJcMH33FvAopYv+p7ba+d1Paf1dt+6+TF/1fDaqxDpB+YBF/gGvAayvuceVnOo60v2C8LIIj8NZIDnwP0gjCZ8z/1Ud2SCMHoIrAB39YT9vue+qkWkEjG7z+6XH/O3Iv+1yWjhAtABjPueO+Z77nYjJCqQ2jY/5k9+FyoROkZGWzOnw1Hfc3NJSFQgZf5GdTgnvJNklFyWI/b6TvmeW2gmkRJC5ndKOPOlSV0amRkla77ZEalAyPznhTdzjIx0JK23xrK/FTYtvLTwjyIzKRVdSpqsDURnWxKQEj6OJH5ICpptTVCOLCvcIePhqNaYxK81qiNJTXhrwh9xVPTMPraSSIkVcT1H1Xdf2f0/LC/8PkcVd6vVW1Q04Vp177FCeR74msDfWf3fC8LoRUwf1oak2tV7/ExA5rb+h/WLa4ft2q8zCZxYrTHR6lWE3wM/GvQxVozMd7WOscz33J0gjAaAZemVSfxjO1+vvyCMHgEHjkSnW41QbEJGQC2mEVqu1dWVEGmTzmw6ap47VZtiWwJCaeFvOOrizQaSkCE+oSJuaGQKes8fJNmqOISCMLoMDAq/4GiuWZX4NaV9aIDQBHDD1hmPYgsxqyEsE4TRlVYQEk5GuIb/r5/RgGU14mYz24gahLLCyxcHvKMc0aIPGifGm9l6yndRh1bVNrwBPlvOFDWpreymfs1LHZoOmtaUlxH6re0ZLh3ojo0quvBMh7kgjEZPeI1penqLyAHwx3DKJ8uKr7IGrDmNE5ZL00l6YyVrVgK3KyLvytedqisVZu2lembtMh+X9fpmlKyRHZ82a1cVOe3zjJ4opTq2plYxX4mYhDMtZR2Ujuwpwi+rFdBmfJ8x59YPWRtyNcn3maRfrq4DFwVu5KwdifflCvgLfcxfyZ2N1e0AAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Sector Trends</h4>
+                            <p class="category__text">Reporting and data analytics on trends in your business sector
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="35" height="35" viewBox="0 0 35 35">
+                                <image data-name="Векторный смарт-объект" width="35" height="35"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAC+0lEQVRYhc2YT0gUURzHP44GkRKBlnmoQ4eEihjmUvdORVclBxQsCAJxL50KL21Ihw4pC2JQGx6GyGvYyXtdHq+swKCLHcQyCFEIMoqX361xGd3Z2V3b32Vh983v+9nfm/f781qowiJjDwH9QAD0AseBDqAd2ADWgSVgETDAszDwv6VVSAUTGXsaGAUuAsf09U/gC/AZ2ATagC6gG2jVmk/AC2AyDPx3NcFExnYCY8AwcFDi88ArYC4M/A8Jz5wELgHngAvAYWANKAL5MPC/Vg0TGXsemAJ8YBmYAe6Hgb9a6R/GfLhI3QSGgB7AAjfCwH+ZGiYy9gpQAFxkZoFcGPjLaSES/DmQCaAPcJEZCQP/aUUYgTwE9gHjYeDns0Ik+HZbfgv4AVwvB2opW+y25rlOh6N/VC+QmMY1Rd2dvsvxLfNiizr1jrjP8UaAOJPfcelMSXc7jE6Ne1ln67k1OwDl9S760v0HozwyrFOTayRIzHLSG5b+38iMKo/M1HJqqjHpzEjX6dOiFP8G2A+cqiaP1GrKQ++B78BZT7XGpfj5vQRhKzqryuhOv99T0UMp/n9YSTfwVH1d0ZvbCSQy9kBk7O0soJGxucjYo7ssmZN+r6c2YCWp6MXsDnA3MjaqEsStf6D6lGjSXXEcnvqRSu/KE+A1MJAWSOsG9FyxwnKn3+Ep9W/utjIM/LfAYFqgMpDBFL2M02/3VCPaKix2QAtpgBJAFir5lv6Gp1axK8UDFYEygiD9dU89a7c6tMxAWUGk61rVJU/Nc6taxVSWAPQxY0SQrtNf9NTFo541tZUBncgIEtc1NdemyNgzwFXgsU5dNc9uq02lL6cjY39Fxt6rxlmt5vSkO02shZjUODGk5nkvQHo0NaxJfwtGSamoccJ18XthE9IrlpJivO3Ma67pUxffyKiMaWyx0v1jzTkdsLVd7ocRzTWFekdI/gryP1I+WTb3RBlz0ByzdsxZc9xClAnsdD/jOjQXqdL9zBGJ1/9+JgGqcTdXwG+3JYMChNPySgAAAABJRU5ErkJggg==" />
+                            </svg>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Low Minimums</h4>
+                            <p class="category__text">Low opening order minimums for most makers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="44" height="28" viewBox="0 0 44 28">
+                                <image data-name="Векторный смарт-объект" width="44" height="28"
+                                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAcCAYAAAAa/l2sAAADtElEQVRYhdWYW6hVVRSGP0/JSUuRoANFh2MXrHyQ2Syoh7AefCgqCJIuUyEJQqVDQdEFozAM0pAuJJRFlGSDyK7Ug0aEJgiRDEZBEHShqFN0RaxO2u3EsLFhd2rvvdZq7wd/WKw915pjrH//c8wx5pwzCIjaYmAN4PdZ9B9TgAH3lpy2NfV+iLCo3Qg8CHwPvAx8MQDCxwKXAaPALSWnjU2czBC184C3gNeBK0pO+/vP9W+I2lEhyBLg9JLTR3V9DAG3AT8Mmqyj5HQAWBnN8SY+nPD5wAtNyIrawro2JafPgFeBa0Rtdl17JzwH+Kquoah5LL4vamfUtQUeAeb5qNY1HGrwsRYuivtpDWzfAD4BVtc1PLLBx1zdmcD6aF4dE6kySk5/itpmYIOopZKThV8PkWXA0cDvwEslp4l2v00VviuG1LFU1E5s4OMp4DdgVduz+4DHgAeAh4HXphvVVljURiKzvBJ59RfgmZi8lVFy+kbUngeuE7Wrwu4YYE/43QCsELVP453fr2+i8BPAH8Cd0fYCsFjUahEO3A88HSHl11bPICWnb4H9ERY7gd3AIn9fS2FROwu4BLgZ+Ckeu9LL/cOiNt/js6q/ktNeV7FLl8mS04r49j3AHXUVfhaYiDLewlRMvNGmxaAiXO3qk07UrgVOdTWnq1hyegfY7plD1OYMkHQ1wqI2K1TdXXLa2aGbD52nu4f6S/GfqKrwyqiI54raPlHzsHgz3o2I2gmR5l6MknvyoAh3nXSidnb8KU9bk4ATG4nrpLh2/IdpETXPocMlp7f7ybVXlvBJdgpwMErpj5Ed9kU7Ax6/vwLDsfD3JeTtwLpYV492ch6CTJ+oH5ScWlV0tqh5gTkCuNg3AL0I7woVnwQWRmIfAxYEMc8QPvw/RwHxUfg6wsUn6Z4e/m8CrgwhCP97RW1LCOD8Loh373nh6EV4rcckcJwblpymevQ/BFHbGruZNV36eFgtBR4vOa2KZ5ucFPBldLOS05ntdl0Jl5w+F7XxWA76UnJjhEInjIVqi2Ib9HGXvq2s8mjbs1uBd9sXP9ONfIvkqt1dclrbRY0Lw/FYOOqk9MyI2/GSk1fATv58In8IfFdyOqfLn/oXKpXmkpMXhfmiNtxjR30gtkG9sCRif10dsgRhD/jjKxI/GBnj/2J1ZJrn6voZikxwuajN7QORnhA1D6tLgS0lp8kmhNfHmcG2QZOObf7maG5q4qN1kHJDrAFaBykTXSZWU/TnIKX147A4qgL+AickM3uRKgFwAAAAAElFTkSuQmCC" />
+                            </svg>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Unique Products
+                            </h4>
+                            <p class="category__text">A variety of products from talented and quality Makers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section pb-50 cd-section" id="section4">
+            <div class="container">
+                <h2 class="section__title ff-r">How Test works</h2>
+                <div class="buyForStore">
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <span>01</span>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Free For Retailers</h4>
+                            <p class="category__text">Sparkinity is completely free for retailers. No markups or fees
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <span> 02</span>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Maker Stories & Reviews</h4>
+                            <p class="category__text">In depth profiles on makers, see who you are buying from and how
+                                they rate
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buyForStore__item category">
+                        <div class="category__logo">
+                            <span> 03</span>
+                        </div>
+                        <div class="category__content">
+                            <h4 class="category__title">Easy Returns</h4>
+                            <p class="category__text">Send back any products that don’t sell within 90 days
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='about cd-section' id="section5">
+            <div class="section__title" hidden>about</div>
+            <div class='about__img about__img--first'>
+                <img src="./img/home.jpg" alt="home-image">
+            </div>
+            <div class='about__content'>
+                <div class="about__subtitle">About Us</div>
+                <h2 class="about__title">We believe that <br />
+                    small can be big</h2>
+                <div class="about__text">
+                    <P>Sparkinity was born because we believe in innovation.
+                        Data shows that small stores are better positioned than ever to take on retail giants as
+                        consumers increasingly seek curation and a personalised touch. Agility is a powerful weapon and
+                        we seek to empower the agile.</P>
+                    <P>​But to fulfil our vision we need to disrupt the age old system of distribution & wholesale. Our
+                        founding team has personal experiences & understanding of the expenses incurred , time and
+                        incredible effort that both buyers & makers make to connect. All because of the need to get a
+                        physical glimpse of that unicorn called the bestseller before risking an order.</P>
+                    <P>​We are changing the buying process by providing retailers a medium to order online with free
+                        returns. Makers save on huge upfront costs for creating distribution networks & store owners can
+                        easily let their customers decide without taking on the risks involved with buying decisions.
+                    </P>
+                </div>
+            </div>
+            <div class='about__img'>
+                <img src="./img/lamp.jpg" alt="lamp-image">
+            </div>
+        </section>
+        <section class='section cd-section' id="section6">
+            <div class="container">
+                <h2 class="section__title center ff-r">How Test works</h2>
+                <div class="comments sliderComments" id="comments">
+                    <div class="comments__item">
+                        <div class="comment">
+                            <div class="comment__img">
+                                <img src="./img/Joana.jpg" alt="autor">
+                            </div>
+                            <h4 class="comment__autor">Joanna Booth</h4>
+                            <div class="comment__text">
+                                <p>
+                                    Looking forward to working with the Sparkinity team as they really
+                                    understand the pressures of buying, I am looking for new products everyday and can't
+                                    wait to
+                                    try out their market test feature
+                                </p>
+                            </div>
+                            <div class="comment__prof">Owner of Space London</div>
+                            <div class="comment__apostrophe">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="40" height="26" viewBox="0 0 40 26">
+                                    <image data-name="&quot;" width="40" height="26"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAaCAYAAADFTB7LAAACLElEQVRYha2XTUhVQRTHf0pmheVHZdrCaCcJiQvBRS3CtkEI0VYIQwkkCFq2c1G7dFUt3Ii4CNxEUQS5UKRNJFr5RYKpCKFI9IFmKifmwWV4d+bcmfuHs5jHe7/3v3fOnDkHhaqBw5ovZlAZUAOUhPy4ArgHTALbwL6JFeAZ0BpoqhF4DHwF9gzzL/AReACc0kBuAusJU2kxBFQqjR0xxnY9zC3gjgt0X2EsGdPAaY+5Y8C7jNz+YqDrGSGFGAdKHQaHA7m9SchR4FsgSKIzxVx7BPMncKYAuh0BklhMMfg2kttXAL2OBElctMydBP5FMr9g8qfZkUNa2QabPLmpkZSlcoHU5mCwzlrX58AU1YrBXzmAdqz1jxyY/7licCEH0Kq1Tjs4WSS3zIYYfJMDbNZay0MvRTLnze1Dg9mi0NP221z+tu5GnuKhJO9RBChtB+QC+BTBvZWElUUU1m7HNl0Avgcwd4tVF+n5BjOCpAJUeXJJTM5k5I66gFfNtu0pQAMecwWVm5xcVBq8rIGeACYcEKl1doHWqMVzKF9oQZc8T9kVYA7T77keukEDOQ7MeUpAyDxxxdFEyOcdGoj88XOHuVeBQ9RZxzgh+d6jBfU5zD1JKco+yfzywbGtN2LNLQPXAoxhzL1P4b4Ezmsgh4CnRV77pGnpQ96a6Bzw2eJKOz8CtGkAkm8yeT00x3/TdLJTwBiwFmhMJA2nnFjJV+l2pFjLDCzcPyoCcABtTbqvhpvpBwAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__item">
+                        <div class="comment">
+                            <div class="comment__img">
+                                <img src="./img/rayne.jpg" alt="autor">
+                            </div>
+                            <h4 class="comment__autor">Ryan Finer</h4>
+                            <div class="comment__text">
+                                <p>
+                                    As a small store we are constantly on our toes to delight our customers and keep
+                                    them coming back for more. Its a very competitive market and finding unique products
+                                    that work with our brand values & price architecture is hard. Sparkinity seems like
+                                    a promising & valuable concep
+                                </p>
+                            </div>
+                            <div class="comment__prof">Owner of Workshop</div>
+                            <div class="comment__apostrophe">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="40" height="26" viewBox="0 0 40 26">
+                                    <image data-name="&quot;" width="40" height="26"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAaCAYAAADFTB7LAAACLElEQVRYha2XTUhVQRTHf0pmheVHZdrCaCcJiQvBRS3CtkEI0VYIQwkkCFq2c1G7dFUt3Ii4CNxEUQS5UKRNJFr5RYKpCKFI9IFmKifmwWV4d+bcmfuHs5jHe7/3v3fOnDkHhaqBw5ovZlAZUAOUhPy4ArgHTALbwL6JFeAZ0BpoqhF4DHwF9gzzL/AReACc0kBuAusJU2kxBFQqjR0xxnY9zC3gjgt0X2EsGdPAaY+5Y8C7jNz+YqDrGSGFGAdKHQaHA7m9SchR4FsgSKIzxVx7BPMncKYAuh0BklhMMfg2kttXAL2OBElctMydBP5FMr9g8qfZkUNa2QabPLmpkZSlcoHU5mCwzlrX58AU1YrBXzmAdqz1jxyY/7licCEH0Kq1Tjs4WSS3zIYYfJMDbNZay0MvRTLnze1Dg9mi0NP221z+tu5GnuKhJO9RBChtB+QC+BTBvZWElUUU1m7HNl0Avgcwd4tVF+n5BjOCpAJUeXJJTM5k5I66gFfNtu0pQAMecwWVm5xcVBq8rIGeACYcEKl1doHWqMVzKF9oQZc8T9kVYA7T77keukEDOQ7MeUpAyDxxxdFEyOcdGoj88XOHuVeBQ9RZxzgh+d6jBfU5zD1JKco+yfzywbGtN2LNLQPXAoxhzL1P4b4Ezmsgh4CnRV77pGnpQ96a6Bzw2eJKOz8CtGkAkm8yeT00x3/TdLJTwBiwFmhMJA2nnFjJV+l2pFjLDCzcPyoCcABtTbqvhpvpBwAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments__item">
+                        <div class="comment">
+                            <div class="comment__img">
+                                <img src="./img/chloe.jpg" alt="autor">
+                            </div>
+                            <h4 class="comment__autor">Chloe Smith</h4>
+                            <div class="comment__text">
+                                <p>
+                                    Having launched my home decor brand last year, I have been struggling with trade
+                                    fairs and connecting with buyers as its so expensive and time consuming. Sparkinity
+                                    is an amazing concept. I have been waiting for this for a long time
+                                </p>
+                            </div>
+                            <div class="comment__prof">Maker of ceramics</div>
+                            <div class="comment__apostrophe">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="40" height="26" viewBox="0 0 40 26">
+                                    <image data-name="&quot;" width="40" height="26"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAaCAYAAADFTB7LAAACLElEQVRYha2XTUhVQRTHf0pmheVHZdrCaCcJiQvBRS3CtkEI0VYIQwkkCFq2c1G7dFUt3Ii4CNxEUQS5UKRNJFr5RYKpCKFI9IFmKifmwWV4d+bcmfuHs5jHe7/3v3fOnDkHhaqBw5ovZlAZUAOUhPy4ArgHTALbwL6JFeAZ0BpoqhF4DHwF9gzzL/AReACc0kBuAusJU2kxBFQqjR0xxnY9zC3gjgt0X2EsGdPAaY+5Y8C7jNz+YqDrGSGFGAdKHQaHA7m9SchR4FsgSKIzxVx7BPMncKYAuh0BklhMMfg2kttXAL2OBElctMydBP5FMr9g8qfZkUNa2QabPLmpkZSlcoHU5mCwzlrX58AU1YrBXzmAdqz1jxyY/7licCEH0Kq1Tjs4WSS3zIYYfJMDbNZay0MvRTLnze1Dg9mi0NP221z+tu5GnuKhJO9RBChtB+QC+BTBvZWElUUU1m7HNl0Avgcwd4tVF+n5BjOCpAJUeXJJTM5k5I66gFfNtu0pQAMecwWVm5xcVBq8rIGeACYcEKl1doHWqMVzKF9oQZc8T9kVYA7T77keukEDOQ7MeUpAyDxxxdFEyOcdGoj88XOHuVeBQ9RZxzgh+d6jBfU5zD1JKco+yfzywbGtN2LNLQPXAoxhzL1P4b4Ezmsgh4CnRV77pGnpQ96a6Bzw2eJKOz8CtGkAkm8yeT00x3/TdLJTwBiwFmhMJA2nnFjJV+l2pFjLDCzcPyoCcABtTbqvhpvpBwAAAABJRU5ErkJggg==" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class='apply cd-section' id="section7">
+            <div class="apply__gray">
+                <div class='apply__content'>
+                    <h2 class="apply__title">Apply to join the community</h2>
+                    <div class="apply__text">We are here to make a difference !<br>
+                        So whether you are a talented Maker or a Retailer drop us a line to join our platform. We would
+                        love
+                        to hear from you</div>
+                    <a class="btn" href="#" target="_blank">register interest</a>
+                </div>
+            </div>
+            <div class="apply__img">
+                <img src="./img/cactus.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    //= partials/footer.html
+
+    //= partials/foot.html
+</body>
+
+</html>

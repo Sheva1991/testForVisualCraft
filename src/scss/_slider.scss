@@ -1,0 +1,104 @@
+//first slider
+.slider {
+    position: relative;
+    min-height: 650px;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+
+    &__dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        transform: translate(0%, -50%);
+        padding: 0;
+        display: flex;
+        justify-content: center;
+
+        & li {
+            font-size: 0;
+            margin-right: 40px;
+        }
+
+        & button {
+            width: 12px;
+            height: 12px;
+            line-height: 12px;
+            border: none;
+            background-color: #d9d9d9;
+            padding: 0;
+            border-radius: 50%;
+            outline: none;
+            cursor: pointer;
+
+            @include hfa {
+                background-color: #fff;
+            }
+
+        }
+
+        & .slick-active button {
+            background-color: #fff;
+        }
+    }
+
+    &__slide {
+        outline: none;
+        text-align: center;
+        height: 80vh;
+
+        .content {
+            min-height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            &__title {
+                font-size: 8rem;
+                color: #fff;
+                letter-spacing: 6px;
+                font-family: $text-ff-abf;
+            }
+        }
+    }
+}
+
+
+.slick-vertical .slick-slide {
+    border: none;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .slider {
+        &__slide {
+
+            .content {
+                &__title {
+                    font-size: 6rem;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .slider {
+        &__slide {
+
+            .content {
+                &__title {
+                    font-size: 4rem;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}

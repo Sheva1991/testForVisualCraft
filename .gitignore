@@ -1,0 +1,4 @@
+node_modules
+*.psd
+*-assetsgit
+package-lock.json
