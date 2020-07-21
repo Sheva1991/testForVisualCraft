@@ -82,6 +82,12 @@
 }
 
 @media screen and (max-width: 576px) {
+    .slider {
+        background-image: url(../img/header-m.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
     .slider {
         &__slide {
